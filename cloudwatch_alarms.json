@@ -1,0 +1,11 @@
+{
+  "AlarmName": "HighCPUUtilization",
+  "MetricName": "CPUUtilization",
+  "Namespace": "AWS/RDS",
+  "Statistic": "Average",
+  "Period": 300,
+  "EvaluationPeriods": 2,
+  "Threshold": 80,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+  "AlarmActions": ["arn:aws:sns:us-east-1:123456789012:MyTopic"]
+}
